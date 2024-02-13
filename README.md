@@ -7,7 +7,7 @@ See a sample of  Kevin Roper's coding portfolio and a look into the possibilites
 - Creative design extends from keyboard to the canvas.
 
 ## My work
-![Screenshot of Kevin's Portfolio](/assets/images/screenshot-kevinsportfolio.PNG?raw=true "Kevins-Portfolio")
+![Screenshot of Kevin's Portfolio](/assets/images/screenshot-kevinsportfolio.PNG "Kevins-Portfolio")
 
 [Visit my portfolio](https://kevins-trove.github.io/KevinsTrove-Portfolio/)
 
