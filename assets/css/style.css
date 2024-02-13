@@ -1,6 +1,7 @@
 
 /* global color palette */
 :root{
+  --background-color: rgb(240, 219, 181);
   --element-background-color: black;
   --element-background-hightligh: darkgrey;
   --text-color: white;
@@ -9,18 +10,17 @@
 
 /* global settings */
 * {
-  box-sizing: border-box;
+  font-family: Arial;
 }
 
 /* Main sections */
 body {
-  font-family: Arial;
-  background-color: rgb(240, 219, 181);
+  
+  background-color: var(--background-color);
 }
   
 header {
   padding: 40px;
-  text-align: center;
   color: var(--text-color);
 }
 
@@ -29,13 +29,11 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  
   background: var(--element-background-color);
   color:var(--text-color);
 }
 
 footer p {
-
   color:var(--text-color);
 }
 
@@ -44,6 +42,16 @@ h1 {
   color: aqua;
 }
   
+.contact {
+  margin: 20px;
+  min-width: 200px;
+}
+
+.nav-menu {
+  margin: 20px;
+  
+}
+
 nav {
   display: flex;
   justify-content: right;
@@ -51,11 +59,10 @@ nav {
 }
 
 nav img {
-  
   width: 200px;
   border-radius: 50%;
   object-fit: cover;
-
+  margin: 20px;
 }
 
 nav a {
@@ -63,6 +70,7 @@ nav a {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  line-height: 2;
 }
 
 nav a:hover {
@@ -73,6 +81,8 @@ nav a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   left: -100px;
   padding: 25px 25px 25px 125px;
@@ -81,19 +91,15 @@ nav a:hover {
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
   color: var(--text-color);
   overflow: hidden;
-  width: 75%;
+  width: 90%;
 }
 
 /* Project card containers */
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: right;
   width: 100%;
-  height: 75%;
 }
 
 .about {
@@ -119,7 +125,6 @@ nav a:hover {
   align-items: left;
   text-align: center;
   margin: 20px;
-  
   border-radius: 20px 20px 20px 20px;
   padding: 10px;
   background-color: var(--element-background-color);
@@ -131,8 +136,6 @@ nav a:hover {
   border: 6px orange solid;
 }
 
-
-
 .card-large p {
   color: var(--text-color);
 }
@@ -143,7 +146,6 @@ nav a:hover {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  
   border-radius: 0 15px 0 0;
   z-index: 50;
 }
@@ -152,20 +154,18 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: left;
   text-align: center;
+  justify-content: space-between;
   margin: 20px;
-  
   border-radius: 20px 20px 20px 20px;
   padding: 10px;
   background-color: var(--element-background-color);
-  width: 30%;
+  width: 28%;
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .card:hover {
   border: 6px orange solid;
-  width: 32%;
 }
 
 .card-header {
@@ -195,18 +195,32 @@ nav a:hover {
   z-index: 50;
 }
 
+/* transparent overlay to card for hyperlink*/
 .link {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1000;
 }
 
 /* Media sizing */
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 45%;
+    }
+}
+
 @media screen and (max-width: 768px) {
-  
+  .navigation-container {
+    position: inherit;
+    border-radius: 25px 25px 25px 25px;
+    padding: 0 0 0 0;
+    width: 100%;
+  }
 
-
+  .card {
+    width: 100%;
+    }
 }
