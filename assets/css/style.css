@@ -1,8 +1,10 @@
 
 /* global color palette */
 :root{
-  --background-color: #13293d;
+  --element-background-color: black;
+  --element-background-hightligh: darkgrey;
   --text-color: white;
+  --highlight-color: cyan;
 }
 
 /* global settings */
@@ -24,10 +26,11 @@ header {
 
 footer {
   display: flex;
-  
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
   
-  background: var(--background-color);
+  background: var(--element-background-color);
   color:var(--text-color);
 }
 
@@ -74,9 +77,9 @@ nav a:hover {
   left: -100px;
   padding: 25px 25px 25px 125px;
   border-radius: 0 25px 25px 0;
-  background-color: black;
+  background-color: var(--element-background-color);
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
-  color: white;
+  color: var(--text-color);
   overflow: hidden;
   width: 75%;
 }
@@ -87,7 +90,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   align-items: right;
   width: 100%;
   height: 75%;
@@ -101,12 +104,48 @@ nav a:hover {
   text-align: left;
   margin: 20px;
   padding: 20px;
-  color: white;
+  color: var(--text-color);
   border-radius: 20px 20px 20px 20px;
   padding: 10px;
-  background-color: black;
+  background-color: var(--element-background-color);
   width: 60%;
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-large {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  text-align: center;
+  margin: 20px;
+  
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+  background-color: var(--element-background-color);
+  width: 100%;
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-large:hover {
+  border: 6px orange solid;
+}
+
+
+
+.card-large p {
+  color: var(--text-color);
+}
+
+.card-large img {
+  position: relative;
+  top: -76px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  
+  border-radius: 0 15px 0 0;
+  z-index: 50;
 }
 
 .card {
@@ -119,17 +158,22 @@ nav a:hover {
   
   border-radius: 20px 20px 20px 20px;
   padding: 10px;
-  background-color: black;
-  width: 40%;
+  background-color: var(--element-background-color);
+  width: 30%;
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  border: 6px orange solid;
+  width: 32%;
 }
 
 .card-header {
   position: relative;
   padding: 10px;
   text-align: left;
-  background-color: black;
-  color: cyan;
+  background-color: var(--element-background-color);
+  color: var(--highlight-color);
   width: 50%;
   font-size: 16px;
   z-index: 100;
@@ -137,7 +181,7 @@ nav a:hover {
 }
 
 .card p {
-  color: white;
+  color: var(--text-color);
 }
 
 .card img {
@@ -146,6 +190,7 @@ nav a:hover {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  overflow: hidden;
   border-radius: 0 15px 0 0;
   z-index: 50;
 }
