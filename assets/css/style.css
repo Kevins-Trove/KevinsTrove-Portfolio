@@ -157,11 +157,10 @@ nav a:hover {
   text-align: center;
   justify-content: space-between;
   margin: 20px;
-  
   border-radius: 20px 20px 20px 20px;
   padding: 10px;
   background-color: var(--element-background-color);
-  width: 30%;
+  width: 28%;
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
