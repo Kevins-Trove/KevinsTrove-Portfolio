@@ -11,5 +11,7 @@ See a sample of  Kevin Roper's coding portfolio and a look into the possibilites
 
 [See my repository](https://github.com/Kevins-Trove/KevinsTrove-Portfolio)
 
+![Screenshot of Kevin's Portfolio](/assets/images/screenshot-kevinsportfolio.PNG?raw=true "Kevins-Portfolio")
+
 - - -
 © 2024 Kevins Trove LLC. All Rights Reserved.
