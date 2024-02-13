@@ -1,3 +1,9 @@
+:root{
+  --background-color: #13293d;
+  --text-color: white;
+}
+
+
 * {
     box-sizing: border-box;
   }
@@ -14,8 +20,8 @@
   header {
     padding: 40px;
     text-align: center;
-    background: #13293d;
-    color: #fff;
+    background: var(--background-color);
+    color: var(--text-color);
   }
   
   nav {
@@ -32,36 +38,15 @@
   }
   
   footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
-  }
-  
-  .product {
-    display: flex;
-    width: 90%;
-    margin: 1% auto;
-  }
-  
-  .product button {
-    font-size: 150%;
-  }
-  
-  .product-slideshow {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: var(--background-color);
+    color:var(--text-color);
   }
   
-  .product-image {
-    width: 100%;
-  }
   
-  .product-details {
-    margin-left: 3%;
-    flex: 0 0 60%;
-  }
   
   @media screen and (max-width: 768px) {
     main,
@@ -70,13 +55,6 @@
       flex-direction: column;
     }
   
-    .product-slideshow button {
-      /* Removes the slideshow buttons from the document flow */
-      display: none;
-    }
   
-    .product-details {
-      margin-left: 0;
-    }
   }
   
