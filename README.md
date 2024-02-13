@@ -8,6 +8,8 @@ See a sample of  Kevin Roper's coding portfolio and a look into the possibilites
 
 ## My work
 ![Screenshot of Kevin's Portfolio](/assets/images/screenshot-kevinsportfolio.PNG?raw=true "KevinsTrove-Portfolio")
+![Screenshot of Kevin's Portfolio](/assets/images/screenshot-refactoringHoriseon.PNG?raw=true "KevinsTrove-Portfolio")
+
 
 [Visit my portfolio](https://kevins-trove.github.io/KevinsTrove-Portfolio/)
 
