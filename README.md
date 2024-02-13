@@ -1,17 +1,14 @@
 # KevinsTrove-Portfolio: Software Portfolio
 
-This project is a portfolio of sample Kevin Roper's coding elperience and a look into the possibilites he can bring into your projects.
+See a sample of  Kevin Roper's coding portfolio and a look into the possibilites he can bring into your projects.
 
 ## Capabilities
 - Javascrip, VBA, java, react, groovy, and migrating legacy systems
 - Creative design extends from keyboard to the canvas.
 
-
-## New look of Horiseon
-![Screenshot of Refactoring Horiseon Project](/assets/images/screenshot-kevinsportfolio.PNG?raw=true "refactoringHoriseon")
-
-
 ## My work
+![Screenshot of Kevin's Portfolio](/assets/images/screenshot-kevinsportfolio.PNG?raw=true "Kevins-Portfolio")
+
 [Visit my portfolio](https://kevins-trove.github.io/KevinsTrove-Portfolio/)
 
 [See my repository](https://github.com/Kevins-Trove/KevinsTrove-Portfolio)
